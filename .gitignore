@@ -1,20 +1,49 @@
+# 🧠 Environnements Symfony
+.env
+.env.local
+.env.*.local
+.env.dev
+.env.test
+.env.prod
+.env.local.php
 
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+# 🔐 Secrets Symfony
+/config/secrets/*/*.decrypt.private.php
+
+# 🗃️ Cache, logs, fichiers temporaires
 /var/
+/var/cache/
+/var/log/
+/var/tmp/
+
+# 📦 Dépendances PHP
 /vendor/
-###< symfony/framework-bundle ###
+/composer.lock
+/symfony.lock
 
-###> phpunit/phpunit ###
+# 🧪 PHPUnit
 /phpunit.xml
+/phpunit.dist.xml
 /.phpunit.cache/
-###< phpunit/phpunit ###
+/.phpunit.result.cache
+/.coverage/
 
-###> symfony/asset-mapper ###
+# 🎨 Asset Mapper / Webpack / Node
 /public/assets/
 /assets/vendor/
-###< symfony/asset-mapper ###
+/node_modules/
+/yarn.lock
+/package-lock.json
+
+# 🛠️ Fichiers d’IDE
+/.idea/
+/.vscode/
+/*.sublime-project
+/*.sublime-workspace
+
+# 🧼 Fichiers système
+.DS_Store
+Thumbs.db
+
+# 🐳 Docker overrides
+/compose.override.yaml
